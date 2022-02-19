@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+
+ /* Medidas Absolutas
+cm, mm, in, px, pt, pc
+
+Medidas Realativas
+em, ex, rem, vw, vh, %
+
+W3c recomenda usar px, em
+
+16pix geralmente = 1em
+*/
+    font-size: 1.1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}

@@ -1,0 +1,37 @@
+@charset "UTf-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Festive & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Oooh+Baby & display=swap');
+
+* {
+    font-family: 'Oooh Baby', cursive;
+}
+
+body {
+    background-image: linear-gradient(to top, #57c4e5, #268b5a);
+}
+
+main {
+    font-family: 'Oooh Baby', cursive;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+    width: 600px;
+    padding: 15px;
+    margin: auto;
+}
+
+h1 {
+    color: #000009;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(126, 102, 102);
+}
+
+h2 {
+    color: #0dd8b3;
+}
+
+p {
+    text-align: justify;
+}

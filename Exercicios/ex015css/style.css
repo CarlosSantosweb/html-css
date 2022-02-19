@@ -1,0 +1,29 @@
+@charset "uft-8";
+/* Regra @charset caso haja problema com acentuação */
+
+body {
+    background-color: rgba(129, 88, 88, 0.692);
+    color: rgb(10, 14, 226);
+    font-size: 14pt;
+    font-family: Arial;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: green;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+p {
+    text-align: justify;
+}
