@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         
         td, th {
@@ -20,9 +21,28 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.0em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: black;
+        }
+
+        tbody > tr:nth-child(2n) { /*
+            ODD = IMPAR POSSO USAR ( 2N-1 ) OU
+            EVEN = PAR POSSO USAR ( 2N ) */
+            background-color: lightgrey;
         }
 
         td.nun {
@@ -36,6 +56,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION >> PARA COLOCAR LEGENDA
             THEAD
                 TR, TD, TH
             TBODY
@@ -44,11 +65,12 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas do Brasil 2021</caption>
         <thead>
             <tr>
-                <td>Posição</td>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" style="width: 10px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -127,13 +149,73 @@
                 <td>Paraíba</td>
                 <td class="nun">4 059 905</td>
             </tr>
+            <tr>
+                <td>16</td>
+                <td>Mato Grosso</td>
+                <td class="nun">3 567 234</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Rio Grande do Norte</td>
+                <td class="nun">3 560 903</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Alagoas</td>
+                <td class="nun">3 365 351</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Piauí</td>
+                <td class="nun">3 289 290</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Distrito Federal</td>
+                <td class="nun">3 094 325</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="nun">2 839 188</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Sergipe</td>
+                <td class="nun">2 338 474</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Rondônia</td>
+                <td class="nun">1 815 278</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Tocantins</td>
+                <td class="nun">1 607 363</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Acre</td>
+                <td class="nun">906 876</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Amapá</td>
+                <td class="nun">877 613</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Roraima</td>
+                <td class="nun">652 713</td>
+            </tr>
 
         </tbody>
         <tfoot>
             <tr>
                 <td></td>
-                <th>Total de Habitantes</th>
-                <td class="nun">0000</td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="nun">213 317 639</td>
             </tr>
         </tfoot>
     </table>
