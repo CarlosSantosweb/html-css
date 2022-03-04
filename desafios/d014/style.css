@@ -5,13 +5,14 @@ body {
 }
 
 table {
-    width: 550px;
+    width: 600px;
     border-collapse: collapse;
 }
 
 td {
-    width: 500px;
-} 
+    font-weight: bold;
+    width: 600px;
+}
 
 td, th {
     border: 1px solid black;    
@@ -22,4 +23,19 @@ th {
     color: white;
     background-color: rgba(0, 0, 0, 0.548);
     padding: 10px;
+}
+
+.menu {
+    color: black;
+    background-color: white;
+}
+
+.org {
+    width: 550px;
+    text-align: center;
+}
+
+.media {
+    background-color: rgba(0, 0, 0, 0.548);
+    color: white;
 }
